@@ -10,13 +10,13 @@ package com.charrua.hibernate;
  *
  * @author Ivan
  */
-public class Profesor extends AbstractProfesor{
+public class TipoProfesor extends AbstractTipoProfesor{
 
-    public Profesor() {
+    public TipoProfesor() {
     }
 
-    public Profesor(int idprofesor) {
-        super(idprofesor);
+    public TipoProfesor(int idtipoprofesor) {
+        super(idtipoprofesor);
     }
     
     
