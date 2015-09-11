@@ -7,6 +7,7 @@
 package com.charrua.hibernate;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  *
@@ -17,6 +18,10 @@ public class AbstractMateria implements Serializable{
     private String nombre;
     private String descripcion;
     private int cargahoraria;
+    private List<Horario> horarios;
+    private List<Profesor> profesores;
+    private List<Alumno> alumnos;
+
 
     public AbstractMateria() {
     }
@@ -56,6 +61,31 @@ public class AbstractMateria implements Serializable{
     public void setCargahoraria(int cargahoraria) {
         this.cargahoraria = cargahoraria;
     }
+
+    public List<Horario> getHorarios() {
+        return horarios;
+    }
+
+    public void setHorarios(List<Horario> horarios) {
+        this.horarios = horarios;
+    }
+    
+    public List<Profesor> getProfesores() {
+        return profesores;
+    }
+
+    public void setProfesores(List<Profesor> profesores) {
+        this.profesores = profesores;
+    }
+
+    public List<Alumno> getAlumnos() {
+        return alumnos;
+    }
+
+    public void setAlumnos(List<Alumno> alumnos) {
+        this.alumnos = alumnos;
+    }
+
     
     
 }

@@ -7,6 +7,7 @@
 package com.charrua.hibernate;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  *
@@ -16,6 +17,7 @@ public class AbstractCarrera implements Serializable {
     private int idcarrera;
     private String nombre;
     private String descripcion;
+    private List<Materia> materias;
 
     public AbstractCarrera() {
     }
@@ -46,6 +48,14 @@ public class AbstractCarrera implements Serializable {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public List<Materia> getMaterias() {
+        return materias;
+    }
+
+    public void setMaterias(List<Materia> materias) {
+        this.materias = materias;
     }
     
     
