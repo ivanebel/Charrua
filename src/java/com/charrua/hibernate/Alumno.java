@@ -10,6 +10,13 @@ package com.charrua.hibernate;
  *
  * @author Ivan
  */
-public class Alumno {
+public class Alumno extends AbstractAlumno{
+
+    public Alumno() {
+    }
+    
+    public Alumno(int idalumno){
+        super(idalumno);
+    }
     
 }

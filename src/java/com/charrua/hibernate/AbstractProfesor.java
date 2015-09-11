@@ -11,5 +11,8 @@ package com.charrua.hibernate;
  * @author Ivan
  */
 public class AbstractProfesor {
-    //algo
+    private int idprofesor;
+    private String nombre;
+    private String direccion;
+    
 }
