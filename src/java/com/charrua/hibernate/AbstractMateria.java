@@ -11,5 +11,8 @@ package com.charrua.hibernate;
  * @author Ivan
  */
 public class AbstractMateria {
-    
+    private int idmateria;
+    private String nombre;
+    private String descripcion;
+    private int cargahoraria;
 }

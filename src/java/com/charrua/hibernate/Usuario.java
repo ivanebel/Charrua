@@ -12,4 +12,5 @@ package com.charrua.hibernate;
  */
 public class Usuario {
     
+    
 }

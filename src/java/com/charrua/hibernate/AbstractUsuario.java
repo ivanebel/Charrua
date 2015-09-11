@@ -11,5 +11,7 @@ package com.charrua.hibernate;
  * @author Ivan
  */
 public class AbstractUsuario {
-    
+    private int idusuario;
+    private String username;
+    private String password;
 }
