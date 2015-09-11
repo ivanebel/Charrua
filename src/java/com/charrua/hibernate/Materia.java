@@ -10,6 +10,16 @@ package com.charrua.hibernate;
  *
  * @author Ivan
  */
-public class Materia {
+public class Materia extends AbstractMateria {
+
+    public Materia() {
+    }
+
+    public Materia(int idmateria) {
+        super(idmateria);
+    }
+    
+    
+    
     
 }

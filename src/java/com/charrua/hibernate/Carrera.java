@@ -10,6 +10,15 @@ package com.charrua.hibernate;
  *
  * @author Ivan
  */
-public class Carrera {
+public class Carrera extends AbstractCarrera {
+
+    public Carrera() {
+    }
+
+    public Carrera(int idcarrera) {
+        super(idcarrera);
+    }
+    
+    
     
 }
