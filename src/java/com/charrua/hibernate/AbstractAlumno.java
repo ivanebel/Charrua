@@ -1,25 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.charrua.hibernate;
 
 import java.io.Serializable;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
-
-/**
- *
- * @author Ivan
- */
-
+@Entity
 public class AbstractAlumno implements Serializable{
 
     @Id
-    private int idalumno;
+    private Long idalumno;
     
     @Column
     private String nombre;
@@ -39,16 +29,16 @@ public class AbstractAlumno implements Serializable{
     public AbstractAlumno() {
     }
 
-    public AbstractAlumno(int idalumno) {
+    public AbstractAlumno(Long idalumno) {
         this.idalumno = idalumno;
     }
     
     
-    public int getIdalumno() {
+    public Long getIdalumno() {
         return idalumno;
     }
 
-    public void setIdalumno(int idalumno) {
+    public void setIdalumno(Long idalumno) {
         this.idalumno = idalumno;
     }
 

@@ -16,7 +16,7 @@ import javax.persistence.OneToOne;
 public class AbstractProfesor {
     
     @Id
-    private int idprofesor;
+    private Long idprofesor;
     
     @Column
     private String nombre;
@@ -31,15 +31,15 @@ public class AbstractProfesor {
     public AbstractProfesor() {
     }
 
-    public AbstractProfesor(int idprofesor) {
+    public AbstractProfesor(Long idprofesor) {
         this.idprofesor = idprofesor;
     }
 
-    public int getIdprofesor() {
+    public Long getIdprofesor() {
         return idprofesor;
     }
 
-    public void setIdprofesor(int idprofesor) {
+    public void setIdprofesor(Long idprofesor) {
         this.idprofesor = idprofesor;
     }
 

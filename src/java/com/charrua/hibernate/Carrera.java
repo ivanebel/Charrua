@@ -15,7 +15,7 @@ public class Carrera extends AbstractCarrera {
     public Carrera() {
     }
 
-    public Carrera(int idcarrera) {
+    public Carrera(Long idcarrera) {
         super(idcarrera);
     }
     

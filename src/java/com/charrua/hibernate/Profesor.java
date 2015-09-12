@@ -15,7 +15,7 @@ public class Profesor extends AbstractProfesor{
     public Profesor() {
     }
 
-    public Profesor(int idprofesor) {
+    public Profesor(Long idprofesor) {
         super(idprofesor);
     }
     

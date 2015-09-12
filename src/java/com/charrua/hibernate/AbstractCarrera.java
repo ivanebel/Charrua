@@ -22,7 +22,7 @@ import javax.persistence.OneToMany;
 public class AbstractCarrera implements Serializable {
     
     @Id
-    private int idcarrera;
+    private Long idcarrera;
     
     @Column
     private String nombre;
@@ -37,15 +37,15 @@ public class AbstractCarrera implements Serializable {
     public AbstractCarrera() {
     }
 
-    public AbstractCarrera(int idcarrera) {
+    public AbstractCarrera(Long idcarrera) {
         this.idcarrera = idcarrera;
     }
 
-    public int getIdcarrera() {
+    public Long getIdcarrera() {
         return idcarrera;
     }
 
-    public void setIdcarrera(int idcarrera) {
+    public void setIdcarrera(Long idcarrera) {
         this.idcarrera = idcarrera;
     }
 

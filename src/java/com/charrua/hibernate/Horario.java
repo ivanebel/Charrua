@@ -13,7 +13,7 @@ public class Horario extends AbstractHorario implements Serializable{
     public Horario() {
     }
 
-    public Horario(int idhorario) {
+    public Horario(Long idhorario) {
         super(idhorario);
     }
     

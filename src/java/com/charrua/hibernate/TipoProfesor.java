@@ -15,7 +15,7 @@ public class TipoProfesor extends AbstractTipoProfesor{
     public TipoProfesor() {
     }
 
-    public TipoProfesor(int idtipoprofesor) {
+    public TipoProfesor(Long idtipoprofesor) {
         super(idtipoprofesor);
     }
     

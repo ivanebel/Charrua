@@ -15,7 +15,7 @@ import javax.persistence.Id;
 public class AbstractUsuario implements Serializable{
     
     @Id
-    private int idusuario;
+    private Long idusuario;
     
     @Column
     private String username;
@@ -31,11 +31,11 @@ public class AbstractUsuario implements Serializable{
         this.password = password;
     }
 
-    public int getIdusuario() {
+    public Long getIdusuario() {
         return idusuario;
     }
 
-    public void setIdusuario(int idusuario) {
+    public void setIdusuario(Long idusuario) {
         this.idusuario = idusuario;
     }
 

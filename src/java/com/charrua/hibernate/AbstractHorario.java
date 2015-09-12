@@ -19,7 +19,7 @@ import javax.persistence.Id;
 public class AbstractHorario implements Serializable{
     
     @Id
-    private int idhorario;
+    private Long idhorario;
     
     @Column
     private int dia;
@@ -33,15 +33,15 @@ public class AbstractHorario implements Serializable{
     public AbstractHorario() {
     }
 
-    public AbstractHorario(int idhorario) {
+    public AbstractHorario(Long idhorario) {
         this.idhorario = idhorario;
     }
 
-    public int getIdhorario() {
+    public Long getIdhorario() {
         return idhorario;
     }
 
-    public void setIdhorario(int idhorario) {
+    public void setIdhorario(Long idhorario) {
         this.idhorario = idhorario;
     }
 

@@ -10,7 +10,14 @@ package com.charrua.hibernate;
  *
  * @author Ivan
  */
-public class Usuario {
+public class Usuario extends AbstractUsuario{
+
+    public Usuario() {
+    }
+
+    public Usuario(String username, String password) {
+        super(username, password);
+    }
     
     
 }

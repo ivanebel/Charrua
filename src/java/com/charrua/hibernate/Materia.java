@@ -15,7 +15,7 @@ public class Materia extends AbstractMateria {
     public Materia() {
     }
 
-    public Materia(int idmateria) {
+    public Materia(Long idmateria) {
         super(idmateria);
     }
     

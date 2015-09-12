@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 public class AbstractMateria implements Serializable{
     
     @Id
-    private int idmateria;
+    private Long idmateria;
     
     @Column
     private String nombre;
@@ -42,15 +42,15 @@ public class AbstractMateria implements Serializable{
     public AbstractMateria() {
     }
     
-    public AbstractMateria(int idmateria){
+    public AbstractMateria(Long idmateria){
         this.idmateria = idmateria;
     }
 
-    public int getIdmateria() {
+    public Long getIdmateria() {
         return idmateria;
     }
 
-    public void setIdmateria(int idmateria) {
+    public void setIdmateria(Long idmateria) {
         this.idmateria = idmateria;
     }
 

@@ -15,7 +15,7 @@ import javax.persistence.Id;
 public class AbstractTipoProfesor implements Serializable{
     
     @Id
-    private int idtipoprofesor;
+    private Long idtipoprofesor;
     
     @Column
     private String nombre;
@@ -26,15 +26,15 @@ public class AbstractTipoProfesor implements Serializable{
     public AbstractTipoProfesor() {
     }
 
-    public AbstractTipoProfesor(int idtipoprofesor) {
+    public AbstractTipoProfesor(Long idtipoprofesor) {
         this.idtipoprofesor = idtipoprofesor;
     }
 
-    public int getIdtipoprofesor() {
+    public Long getIdtipoprofesor() {
         return idtipoprofesor;
     }
 
-    public void setIdtipoprofesor(int idtipoprofesor) {
+    public void setIdtipoprofesor(Long idtipoprofesor) {
         this.idtipoprofesor = idtipoprofesor;
     }
 

@@ -15,7 +15,7 @@ public class Alumno extends AbstractAlumno{
     public Alumno() {
     }
     
-    public Alumno(int idalumno){
+    public Alumno(Long idalumno){
         super(idalumno);
     }
     
