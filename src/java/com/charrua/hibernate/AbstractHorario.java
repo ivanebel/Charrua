@@ -7,16 +7,27 @@
 package com.charrua.hibernate;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  *
  * @author Ivan
  */
+@Entity
 public class AbstractHorario implements Serializable{
     
+    @Id
     private int idhorario;
+    
+    @Column
     private int dia;
+    
+    @Column
     private int horainicio;
+    
+    @Column
     private int horafin;
 
     public AbstractHorario() {

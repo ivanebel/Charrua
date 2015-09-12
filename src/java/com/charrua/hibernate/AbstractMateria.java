@@ -1,25 +1,41 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.charrua.hibernate;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.OneToMany;
 
-/**
- *
- * @author Ivan
- */
+
+@Entity
 public class AbstractMateria implements Serializable{
+    
+    @Id
     private int idmateria;
+    
+    @Column
     private String nombre;
+    
+    @Column
     private String descripcion;
+    
+    @Column
     private int cargahoraria;
+    
+    @OneToMany( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
+    @JoinTable( name = "materiahorarios" )
     private List<Horario> horarios;
+    
+    @OneToMany( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
+    @JoinTable( name = "materiaprofesores" )
     private List<Profesor> profesores;
+    
+    @OneToMany( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
+    @JoinTable( name = "materiaalumnos" )
     private List<Alumno> alumnos;
 
 

@@ -6,16 +6,28 @@
 
 package com.charrua.hibernate;
 
-/**
- *
- * @author Ivan
- */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+
+@Entity
 public class AbstractProfesor {
+    
+    @Id
     private int idprofesor;
+    
+    @Column
     private String nombre;
+    
+    @Column
     private String direccion;
+    
+    @OneToOne
     private TipoProfesor tipoprofesor;
 
+    
     public AbstractProfesor() {
     }
 

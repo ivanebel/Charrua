@@ -8,15 +8,30 @@ package com.charrua.hibernate;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.OneToMany;
 
 /**
  *
  * @author Ivan
  */
 public class AbstractCarrera implements Serializable {
+    
+    @Id
     private int idcarrera;
+    
+    @Column
     private String nombre;
+    
+    @Column
     private String descripcion;
+    
+    @OneToMany( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
+    @JoinTable( name = "carreramaterias" )
     private List<Materia> materias;
 
     public AbstractCarrera() {

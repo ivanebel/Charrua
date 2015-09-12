@@ -7,14 +7,20 @@
 package com.charrua.hibernate;
 
 import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-/**
- *
- * @author Ivan
- */
+@Entity
 public class AbstractTipoProfesor implements Serializable{
+    
+    @Id
     private int idtipoprofesor;
+    
+    @Column
     private String nombre;
+    
+    @Column
     private String descripcion;
 
     public AbstractTipoProfesor() {
