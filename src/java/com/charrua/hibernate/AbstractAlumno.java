@@ -8,11 +8,13 @@ package com.charrua.hibernate;
 
 import java.io.Serializable;
 
+
 /**
  *
  * @author Ivan
  */
 public class AbstractAlumno implements Serializable{
+
     private int idalumno;
     private String nombre;
     private String dni;

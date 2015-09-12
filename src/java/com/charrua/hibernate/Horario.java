@@ -6,11 +6,9 @@
 
 package com.charrua.hibernate;
 
-/**
- *
- * @author Ivan
- */
-public class Horario extends AbstractHorario{
+import java.io.Serializable;
+
+public class Horario extends AbstractHorario implements Serializable{
 
     public Horario() {
     }
